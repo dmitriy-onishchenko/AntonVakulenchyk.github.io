@@ -1,0 +1,307 @@
+/* ========================================================== */
+/* 			     TABLETS (max-width: 992px)                   */
+/* ========================================================== */
+
+@media screen and (max-width: 992px) {
+    
+    /* ========================================================== */
+    /* 			               01. GENERAL LAYOUT                 */
+    /* ========================================================== */
+    .section-title { 
+        font-size: 30px;   /* on mobile - 23px */ 
+    }
+    .custom-btn {
+        font-size: 22px;
+        padding: 15px 75px;
+        min-width: 350px;
+    }    
+    
+    /* ========================================================== */
+    /* 			                HOME SECTION                      */
+    /* ========================================================== */
+    .topnavbar {
+        padding: 25px 0;
+    }
+    .topnavbar span {
+        font-size: 19px;
+    }
+    .home-section .flex-row {
+        padding: 50px 0;
+    }
+    .home-section_left .first { 
+        font-size: 27px;  
+        margin-bottom: 30px;
+    }
+    .home-section_left .first::before {
+        width: 120px;
+        height: 120px;
+    }
+    .home-section_left .second {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .home-section_right .play img {
+        width: 90px;
+    }
+    .home-section_right .play_text {
+        font-size: 14px;
+    }
+    /* ========================================================== */
+    /* 			                BIRTH-OF-LEADER                   */
+    /* ========================================================== */
+    .birth-of-leader .quote_row {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .birth-of-leader .quote_row::before {
+        width: 100%;
+        height: 70%;
+    }
+    .birth-of-leader_bottom p {
+        font-size: 24px;
+        margin-top: 25px;
+    }
+    .birth-of-leader .quote_text {
+        font-size: 22px;  /* on mobile - 16px */
+    }
+    .birth-of-leader_man {
+        width: 150px;
+    }
+    .birth-of-leader_bottom .btn {
+        margin: 30px 0 60px 0;
+    }
+    /* ========================================================== */
+    /* 			               TRUE-LEADER                        */
+    /* ========================================================== */
+    .true-leader {
+        padding-top: 60px;
+    }    
+
+    .true-leader .true-leader-block {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+    .true-leader .quote_text {
+        font-size: 22px; 
+    }
+    .birth-of-leader__quote__text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .happy-man {
+        width: 240px;
+    }
+    /* ========================================================== */
+    /* 			               THINK WINNER                       */
+    /* ========================================================== */
+    .think-winner {
+        padding-top: 65px;
+    }
+    .think-winner .quote_text  {
+        font-size: 16px; 
+    }
+    .think-winner .text-block > p {
+        font-size: 18px; 
+        text-align: center;
+    }
+    .think-winner .quote_row {
+        margin-bottom: 70px;
+    }
+    .think-winner .video-block {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 70px;
+    }
+    .think-winner .video-block .text-block {
+        padding-bottom: 40px;
+        font-size: 22px; /
+        text-align: center;
+    }
+    .think-winner_bottom h5 {
+         font-size: 30px;  
+        margin-bottom: 30px;
+    }
+    .think-winner_bottom p {
+        font-size: 24px; 
+        margin-bottom: 25px;
+    }
+    .think-winner_woman {
+        width: 200px;
+    }
+    /* ========================================================== */
+    /* 			               THINK WINNER                       */
+    /* ========================================================== */
+    
+    .life-balance__quote__text .quote_text {
+         font-size: 22px; 
+    }
+    .life-balance .quote_row {
+        margin: 40px 0 70px 0;
+    }
+    .life-balance .text-block {
+        font-size: 22px; 
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .life-balance .video-block {
+        padding-bottom: 30px;
+    }
+    /* ========================================================== */
+    /* 			               LAST SECTION                       */
+    /* ========================================================== */
+    .last-section {
+        padding: 60px 0;
+    }
+    .last-section .section-title_wrapp {
+        margin-bottom: 40px;
+    }
+    .last-section_row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .last-section_row .text-block {
+        text-align: center;
+        margin-top: 60px;
+    }
+    .last-section_row .text-block p {
+        font-size: 22px;
+    }
+    .last-section .text-block .big {
+        font-size: 26px;
+    }
+    .last-section .btn {
+        margin-top: 25px;
+    }
+    .last-section .text-block .big {
+        font-size: 20px;
+    }
+    .man_left {
+        width: 230px;
+    }
+    
+    
+}
+
+/* ========================================================== */
+/* 			               MAX-WIDTH: 768px                   */
+/* ========================================================== */
+
+@media screen and (max-width: 768px) {
+    
+    /* ========================================================== */
+    /* 			               01. GENERAL LAYOUT                 */
+    /* ========================================================== */
+    .section-title { 
+        font-size: 23px;   
+    }
+    .custom-btn {
+        width: 300px;
+        max-width: 300px;
+        min-width: 300px;
+    }    
+    
+    /* ========================================================== */
+    /* 			                BIRTH-OF-LEADER                   */
+    /* ========================================================== */
+    .birth-of-leader .quote_row {
+        margin-bottom: -25px;
+    }
+
+    .birth-of-leader_bottom p {
+        font-size: 18px;
+    }
+    .birth-of-leader .quote_text {
+        font-size: 16px;  /* on mobile - 16px */
+    }
+    
+    .birth-of-leader_man {
+        width: 120px;
+        right: -30px;
+    }
+
+    /* ========================================================== */
+    /* 			               TRUE-LEADER                        */
+    /* ========================================================== */
+
+    .true-leader .quote_text {
+        font-size: 16px; 
+        margin-bottom: 0;
+    }
+    
+    .happy-man {
+        width: 170px;
+        right: -60px;
+    }
+    /* ========================================================== */
+    /* 			               THINK WINNER                       */
+    /* ========================================================== */
+
+    .think-winner .text-block > p {
+        font-size: 16px;
+    }
+    .think-winner .quote_row::before {
+        width: 100%;
+    }
+ 
+    .think-winner .video-block .text-block {
+        font-size: 16px; 
+    }
+    .think-winner .quote_text {
+        text-align: center;
+    }
+    .think-winner_bottom h5 {
+         font-size: 23px;   
+    }
+    .think-winner_bottom p {
+        font-size: 18px; 
+    }
+    .think-winner_woman {
+        width: 130px;
+    }
+    /* ========================================================== */
+    /* 			               THINK WINNER                       */
+    /* ========================================================== */
+    
+    .life-balance__quote__text .quote_text {
+         font-size: 16px; 
+        text-align: center;
+    }
+
+    .life-balance .quote_row::before {
+        width: 100%;
+    }
+    .life-balance .text-block {
+        font-size: 16px;  
+
+    }
+    /* ========================================================== */
+    /* 			               LAST SECTION                       */
+    /* ========================================================== */
+
+    .last-section_row .text-block p {
+        font-size: 16px;
+    }
+    .last-section .text-block .big {
+        font-size: 20px;
+    }
+    .man_left {
+        width: 170px;
+        left: -85px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+     .home-section_left {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .topnavbar a {
+        font-size: 17px;
+    }
+}
+
+
