@@ -5,7 +5,7 @@ wow = new WOW(
   {
 	animateClass: 'animated',
 	offset:       100,
-	mobile:       true,       // trigger animations on mobile devices (default is true)
+	mobile:       false,       // trigger animations on mobile devices (default is true)
 	
   }
 );

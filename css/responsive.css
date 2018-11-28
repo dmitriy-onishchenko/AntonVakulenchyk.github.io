@@ -7,12 +7,15 @@
     /* ========================================================== */
     /* 			               01. GENERAL LAYOUT                 */
     /* ========================================================== */
+    section:not(.home-section):not(.think-winner):not(.life-balance) {
+        padding: 40px 0!important;
+    }
     .section-title { 
         font-size: 30px;   /* on mobile - 23px */ 
     }
     .custom-btn {
         font-size: 22px;
-        padding: 15px 75px;
+        padding: 15px;
         min-width: 350px;
     }    
     
@@ -36,7 +39,7 @@
         width: 120px;
         height: 120px;
     }
-    .home-section_left .second {
+    .home-section_left .second, .home-section_left .third {
         font-size: 20px;
         margin-bottom: 40px;
     }
@@ -58,18 +61,27 @@
         width: 100%;
         height: 70%;
     }
+    .quote-left-block {
+        margin-bottom: 20px;
+    }
+    .quote-left-block, .quote-right-block {
+        text-align: center!important;
+        font-size: 22px;
+        padding-right: 0;
+    }
     .birth-of-leader_bottom p {
         font-size: 24px;
         margin-top: 25px;
     }
     .birth-of-leader .quote_text {
-        font-size: 22px;  /* on mobile - 16px */
+        font-size: 18px;  /* on mobile - 16px */
     }
+    
     .birth-of-leader_man {
         width: 150px;
     }
     .birth-of-leader_bottom .btn {
-        margin: 30px 0 60px 0;
+        margin-top: 30px;
     }
     /* ========================================================== */
     /* 			               TRUE-LEADER                        */
@@ -87,7 +99,8 @@
         font-size: 22px; 
     }
     .birth-of-leader__quote__text {
-        text-align: center;
+        padding: 20px 0;
+        padding-top: 0;
         margin-bottom: 30px;
     }
     .happy-man {
@@ -109,6 +122,28 @@
     .think-winner .quote_row {
         margin-bottom: 70px;
     }
+    .think-winner .wozniak_wrapp {
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+    
+    .think-winner .wozniak_wrapp .left-text {
+        width: 75%;
+        padding: 40px;
+        padding-right: 0;
+        font-size: 14px;
+    }
+    
+    .think-winner .wozniak_wrapp .left-text .left-text-author {
+        right: inherit;
+        width: auto;
+    }
+    .think-winner .wozniak_wrapp .left-text .left-text-author .author_info {
+        font-size: 18px;
+    }
+    .think-winner .wozniak_wrapp .left-text .left-text-author .quote_author {
+        font-size: 22px;
+    }
     .think-winner .video-block {
         display: flex;
         flex-direction: column-reverse;
@@ -116,7 +151,7 @@
     }
     .think-winner .video-block .text-block {
         padding-bottom: 40px;
-        font-size: 22px; /
+        font-size: 22px; 
         text-align: center;
     }
     .think-winner_bottom h5 {
@@ -127,8 +162,14 @@
         font-size: 24px; 
         margin-bottom: 25px;
     }
-    .think-winner_woman {
+    .think-winner .think-winner_woman {
         width: 200px;
+/*        bottom: -46px;*/
+        left: -80px;
+    }
+    
+    .think-winner .list .list-item {
+        text-align: left;
     }
     /* ========================================================== */
     /* 			               THINK WINNER                       */
@@ -140,48 +181,54 @@
     .life-balance .quote_row {
         margin: 40px 0 70px 0;
     }
-    .life-balance .text-block {
-        font-size: 22px; 
+    .life-balance:not(.get-more-info) .text-block {
+        font-size: 16px; 
         text-align: center;
         margin-bottom: 35px;
     }
-    .life-balance .video-block {
+    .life-balance:not(.get-more-info) .video-block {
         padding-bottom: 30px;
-    }
-    /* ========================================================== */
-    /* 			               LAST SECTION                       */
-    /* ========================================================== */
-    .last-section {
-        padding: 60px 0;
-    }
-    .last-section .section-title_wrapp {
-        margin-bottom: 40px;
-    }
-    .last-section_row {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .last-section_row .text-block {
-        text-align: center;
-        margin-top: 60px;
-    }
-    .last-section_row .text-block p {
-        font-size: 22px;
-    }
-    .last-section .text-block .big {
-        font-size: 26px;
-    }
-    .last-section .btn {
-        margin-top: 25px;
-    }
-    .last-section .text-block .big {
-        font-size: 20px;
-    }
-    .man_left {
-        width: 230px;
+        margin-bottom: 50px;
     }
     
+    .life-balance .list .list-item {
+        padding-right: 0;
+        padding-left: 60px;
+    }
     
+    .life-balance .list .list-item span {
+        text-align: left;
+    }
+    
+    .life-balance .list .list-item img {
+        left: 0;
+    }
+    
+    .think-winner:not(.charisma-block) .video-block{
+        margin-bottom: 50px;
+        
+    }
+    
+    .life-balance .life-balance_woman {
+        width: 200px;
+        right: -50px;
+    }
+    
+    .businessman {
+        width: 120px;
+        left: -45px
+    }
+    /* ========================================================== */
+    /* 			               GET-MORE-INFO                      */
+    /* ========================================================== */
+    .get-more-info .video-block {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .get-more-info .text-block span {
+        font-size: 18px;
+    }
 }
 
 /* ========================================================== */
@@ -197,9 +244,9 @@
         font-size: 23px;   
     }
     .custom-btn {
-        width: 300px;
-        max-width: 300px;
-        min-width: 300px;
+        width: 280px;
+        max-width: 280px;
+        min-width: 280px;
     }    
     
     /* ========================================================== */
@@ -211,6 +258,11 @@
 
     .birth-of-leader_bottom p {
         font-size: 18px;
+    }
+    
+    .quote-left-block, .quote-right-block {
+        text-align: center!important;
+        font-size: 20px;
     }
     .birth-of-leader .quote_text {
         font-size: 16px;  /* on mobile - 16px */
@@ -233,6 +285,14 @@
     .happy-man {
         width: 170px;
         right: -60px;
+    }
+    .true-leader .items-wrapp .item {
+        margin-bottom: 55px;
+        box-shadow: 0px 9px 24px -5px #dcdcdc;
+    }
+    
+    .true-leader .items-wrapp {
+        margin: 75px 0 0 0;
     }
     /* ========================================================== */
     /* 			               THINK WINNER                       */
@@ -277,18 +337,12 @@
 
     }
     /* ========================================================== */
-    /* 			               LAST SECTION                       */
+    /* 			               GET-MORE-INFO                      */
     /* ========================================================== */
-
-    .last-section_row .text-block p {
+    
+    .get-more-info .text-block span {
         font-size: 16px;
-    }
-    .last-section .text-block .big {
-        font-size: 20px;
-    }
-    .man_left {
-        width: 170px;
-        left: -85px;
+        margin-top: 45px;
     }
 }
 
