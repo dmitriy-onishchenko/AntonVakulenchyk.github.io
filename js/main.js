@@ -118,33 +118,49 @@ $(document).ready(function(){
 
         moveMenu();
 
+        function departmentsNone() {
+             $(this).css({'display':'none'});
+        }
+
         /* show/hide departments */
         function allDepartments() {
-            if (window.matchMedia('(max-width: 576px)').matches) {
 
-            $('.all-departments_block').find('a:gt(2)').each(function(){
-                $(this).css({'display':'none'});
-                if($(this).hasClass('js-show-all-departments')) {
-                    $(this).css({'display':'inline'});
-                }
+            if (window.matchMedia('(max-width: 768px)').matches) {
+
+            $('.all-departments_block').each(function(){
+
+
+                 $(this).find('a:not(.js-show-all-departments)').slice(3).each(function() {
+
+                   
+
+
+
+                        $(this).css({'display':'none'});
+                        
+           console.log($(this).css('display'));
+                        
+                 });
+
+              
+
+                
+                 
+              
             });
 
             $('.js-show-all-departments').click(function(e){
                 e.preventDefault();
                 $(this).parent().find('a:gt(2):not(.js-show-all-departments)').toggle();
             });
-            } else {
-               $('.all-departments_block').find('a:gt(2)').each(function(){
-                    $(this).css({'display':'inline'});
-               });
-            }
+            } 
         }
 
         allDepartments();
 
         $(window).resize(function(){
             moveMenu();
-            allDepartments(); 
+          
         });
 
         var benefitsSlider = new Swiper('.js-benefitsSlider', {

@@ -453,7 +453,8 @@ h3.custom-title {
 .departments .departments-bottom .all-departments_block__title {
   font-size: 4.6rem;
   color: #3e74ae;
-  text-decoration: underline;
+  border-bottom: 3px solid;
+  display: inline-block;
   margin-bottom: 5rem;
 }
 .departments .departments-bottom .all-departments_block a {
@@ -762,12 +763,12 @@ h3.custom-title {
   .departments .departments-bottom .benefits-wrapper {
     padding: 0;
   }
-}
-@media screen and (max-width: 576px) {
   .departments .departments-bottom .all-departments .all-departments_block {
     text-align: center;
     height: auto;
   }
+}
+@media screen and (max-width: 576px) {
   .departments-tabs_content a {
     font-size: 2.6rem;
     padding: 5rem 0;
