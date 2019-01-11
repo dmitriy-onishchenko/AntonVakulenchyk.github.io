@@ -144,7 +144,7 @@ $(document).ready(function(){
 
         $(window).resize(function(){
             moveMenu();
-            allDepartments();
+            allDepartments(); 
         });
 
         var benefitsSlider = new Swiper('.js-benefitsSlider', {
