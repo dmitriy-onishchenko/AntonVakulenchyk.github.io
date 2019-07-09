@@ -1165,6 +1165,9 @@ textarea {
   flex-wrap: wrap;
   margin: 10px 0;
 }
+.warranties img {
+  width: 131px;
+}
 .warranties > div {
   margin: 3px 10px 3px 0px;
 }
