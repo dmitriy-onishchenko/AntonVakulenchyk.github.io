@@ -1175,8 +1175,7 @@ textarea {
   display: inline-flex;
   color: #fff;
   justify-content: center;
-  min-width: 92px;
-  max-width: 129px;
+  width: 131px;
   align-items: center;
   background-color: #00aeef;
   border-radius: 5px;
