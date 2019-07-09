@@ -1434,3 +1434,19 @@ textarea {
     width: calc(55% - 15px);
 }
 }
+img.retina {
+display: none;
+}
+@media
+screen and (-webkit-min-device-pixel-ratio: 1.5),
+screen and (-moz-min-device-pixel-ratio: 1.5),
+screen and (min-device-pixel-ratio: 1.5) {
+
+  img.retina {
+    display: initial;
+  }
+  img.retina + img {
+    display: none;
+  }
+  
+}
