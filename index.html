@@ -1,511 +1,840 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Private page</title>
 
+    <title>Title</title>
+    <meta name="description" content="">
 
-    <!-- bootstrap.min.css -- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- custom_scrollbars -->
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-    <link rel="stylesheet" href="css/animate.css">
-
-    <!-- main CSS -->
-    <link href="css/style.css?v=2" rel="stylesheet">
-
-    <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- custom select -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <header class="header">
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="menuEight" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">        
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-             <form class="form-inline my-2 my-lg-0">
-               <div class="search-wrapp">
-                <input class="form-control mr-sm-2 custom-search" type="search" placeholder="Поиск...">
-                </div>
-            </form>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav navbar-left mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Доктора</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Отзывы</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Акции</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav navbar-icons">
-                    <li class="nav-item d-flex align-items-center">
-                        <a href="#" class="nav-link social-icon"><img src="img/facebook-letter-logo.png" alt=""></a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a href="#" class="nav-link social-icon"><img src="img/instagram.png" alt=""></a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a href="#" class="nav-link social-icon"><img src="img/russian.png" alt=""></a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <a href="#" class="nav-link social-icon"><img src="img/ukrainian.png" alt=""></a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
 
 
+   	<div class="container" style="padding-top: 50px;">
+			<!-- ТОВАР  -->
+			<div class="product nowrap">
+				<div class="image inline-block">
+					<img src="https://price.boo.ua/img/Безымянный-1.png">
+				</div>
+				<div class="description inline-block">
+					<h1>Apple iPhone 7 Plus 32GB Silver (MNQN2) Refurbished</h1>
+					<div class="row">
+						<div class="col-md-6">
+							<span class="under-title">
+								5 <span class="red">boo</span> предложений от 8 466-12 099 грн
+							</span>
+							<div class="mt-1">
+								<div class="pick-color">
+									Цвет:
+									<span class="color">
+										<input id="color1" type="radio" name="color">
+										<label style="background-color: #3d3d3d;" for="color1">
+										</label>	
+									</span>
+									<span class="color">
+										<input id="color2" type="radio" name="color">
+										<label style="background-color: #f9f3be;" for="color2">
+										</label>	
+									</span>
+								</div>
+								<div class="pick-memory">
+									Объём памяти:
+									<span class="memory">
+										<input checked="" id="memory1" type="radio" name="memory">
+										<label for="memory1">
+											<img class="check-icon" src="img/check-icon.png">
+											32 ГБ
+										</label>
+									</span>
+									<span class="memory">
+										<input id="memory2" type="radio" name="memory">
+										<label for="memory2">
+											<img class="check-icon" src="img/check-icon.png">
+											256 ГБ
+										</label>
+									</span>
+								</div>
+								 
+							</div>
+							<div class="actions-wrapper">
+								<div class="price-block">
+									<div>
+										<p>Цена нового товара:</p>
+										<span class="price">
+											23 000 грн
+										</span>
+									</div>
+									<a href="#" class="white-btn">Купить новый</a>
+								</div>
+								<div class="actions">
+									<a class="with-icon with-message-icon" href="#">Отписаться от товара</a>
+									<a class="with-icon with-weights-icon" href="#">Перейти к сравнению</a>
+								</div>
+							</div>
 
-    </header>
+							<div class="sell-block">
+								<p>Продайте выгодно!</p>
+								<span class="txt">Если у вас такой же товар - вы можете выгодно иего продать не выходя из дома. Это абсолютно бесплатно и очень просто!</span>
+								<a href="#" class="sell-btn">Продать</a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="specification">
+								<div>
+									<p>характеристики</p>
+									<table class="spec-items with-dots">
+										<tr>
+											<td>
+												<span>Емкость аккумулятора</span>
+											</td>
+											<td>2 900 MAh</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Диагональ экрана</span>
+											</td>
+											<td>5.5"</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Встроенная память</span>
+											</td>
+											<td>32 GB</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Оперативная память</span>
+											</td>
+											<td>3 Гб</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Емкость аккумулятора</span>
+											</td>
+											<td>2 900 MAh</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Емкость аккумулятора</span>
+											</td>
+											<td>5.5"</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Емкость аккумулятора</span>
+											</td>
+											<td>32 GB</td>
+										</tr>
+										<tr>
+											<td>
+												<span>Емкость аккумулятора</span>
+											</td>
+											<td>3 Гб</td>
+										</tr>
+									</table>
+									<div>
+										<a href="#">Все характеристики</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ТОВАР КОНЕЦ -->
+			<div class="share">
+					Поделиться:
+					<a href="#"><i class="icon-fb"></i></a>
+					<a href="#"><i class="icon-twitter"></i></a>
+					<a href="#"><i class="icon-ok"></i></a>
+			</div>
+			<div class="filters-block">
+				<div>
+					<h5>
+						5 предложений от 8 466-12 099 грн
+					</h5>
+					<div class="price-filter">Показать: 
+						<a href="#">сначала дешёвые</a></div>	
+				</div>
+				<div>
+					<div class="price-dynamic">
+							<a href="" data-toggle="modal" data-target="#priceDynamics">
+								<i class="icon-price-dynamic mr-1"></i>динамика цен
+							</a> 
+						</div>
+						<div class="product-view">
+							<a data-view="grid" href="#">
+								<i class="icon-grid-icon"></i>
+							</a>
+							<a data-view="list" href="#" class="active">
+								<i class="icon-list-icon"></i>
+							</a>
+						</div>	
+				</div>
+			</div>
+			<div class="parameters-block">
+				<div class="state-checkboxes">
+					<span>
+						<input class="styled-checkbox" type="checkbox" id="apple" name="apple" value="Apple">
+	  					<label for="apple">Apple</label>	
+					</span>
+					<span>
+						<input class="styled-checkbox" type="checkbox" id="apple1" name="apple1" value="Apple">
+	  					<label for="apple1">Чекбокс</label>
+					</span>
+				</div>
+			</div>
+			
+			<!-- ТОВАРЫ СПИСОК -->
+			<div id="products" class="products-list list-view">
+				<div class="product-item_wrapp">
+					<div class="product-item">
+						<div class="left">
+							<div class="product-image">
+								<div class="image">
+									<div class="count">
+										<i class="icon-photo"></i>
+										5
+									</div>
+									<img src="https://price.boo.ua/img/Безымянный-1.png">
+								</div>
+							</div>
+							<div class="product-info">
+								<div class="product-info_title">
+									<span class="state-item light-blue">Востановленный</span>
+									<a href="#">Apple iPhone 7 Plus 32GB Silver (MNQN2)</a>
+								</div>
+								<div class="product-info_under">
+									<span class="code">код товара: 3125747</span>
+									<span class="delivery small">Киев, Харьков, Днепр и др.</span>
+								</div>
+								<div class="pay-info grid">
+									<div class="price">8 466 грн</div>
+									<div class="old-price">
+									<span class="discount-item">
+										-10%
+									</span>
+									9 500 грн</div>
+								</div>
+								<div class="product-info_short">
+									<span class="descr-item">гарантия 3 месяца</span>
+									<span class="descr-item">зарядное устройство</span>
+									<span class="descr-item">с документами</span>
+								</div>
+								<div class="product-info_text">
+									Все работает. Хорошее состояние, есть небольшие потертости
+								</div>
+							</div>
+						</div>
+						<div class="product-actions">
+							<div class="pay-info">
+								<div class="price">8 466 грн</div>
+								<div class="old-price">
+								<span class="discount-item">
+									-10%
+								</span>
+								9 500 грн</div>
+							</div>
+							<div class="product-actions_btns">
+								<div class="top">
+									<a href="#" class="add-to-cart btn btn-fill">В корзину</a>
+									<a href="" class="white-btn add-bookmark">
+										<i class="icon-heart"></i>
+									</a>
+								</div>
+								<div class="fast-order">
+									<a href="" class="white-btn">Заказать в 1 клик</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-item_wrapp">
+					<div class="product-item">
+						<div class="left">
+							<div class="product-image">
+								<div class="image">
+									<div class="count">
+										<i class="icon-photo"></i>
+										5
+									</div>
+									<img src="https://price.boo.ua/img/Безымянный-1.png">
+								</div>
+							</div>
+							<div class="product-info">
+								<div class="product-info_title">
+									<span class="state-item green">Как новый</span>
+									<a href="#">Apple iPhone 7 Plus 32GB Silver (MNQN2)</a>
+								</div>
+								<div class="product-info_under">
+									<span class="code">код товара: 3125747</span>
+									<span class="delivery small">Киев, Харьков, Днепр и др.</span>
+								</div>
+								<div class="pay-info grid">
+									<div class="price">8 466 грн</div>
+									<div class="old-price">
+									<span class="discount-item">
+										-10%
+									</span>
+									9 500 грн</div>
+								</div>
+								<div class="product-info_short">
+									<span class="descr-item">гарантия 3 месяца</span>
+									<span class="descr-item">зарядное устройство</span>
+									<span class="descr-item">с документами</span>
+								</div>
+								<div class="product-info_text">
+									Все работает. Хорошее состояние, есть небольшие потертости
+								</div>
+							</div>
+						</div>
+						<div class="product-actions">
+							<div class="pay-info">
+								<div class="price">8 466 грн</div>
+								<div class="old-price">
+								<span class="discount-item">
+									-10%
+								</span>
+								9 500 грн</div>
+							</div>
+							<div class="product-actions_btns">
+								<div class="top">
+									<a href="#" class="add-to-cart btn btn-fill">В корзину</a>
+									<a href="" class="white-btn add-bookmark">
+										<i class="icon-heart"></i>
+									</a>
+								</div>
+								<div class="fast-order">
+									<a href="" class="white-btn">Заказать в 1 клик</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-item_wrapp">
+					<div class="product-item">
+						<div class="left">
+							<div class="product-image">
+								<div class="image">
+									<div class="count">
+										<i class="icon-photo"></i>
+										5
+									</div>
+									<img src="https://price.boo.ua/img/Безымянный-1.png">
+								</div>
+							</div>
+							<div class="product-info">
+								<div class="product-info_title">
+									<span class="state-item orange">Среднее</span>
+									<a href="#">Apple iPhone 7 Plus 32GB Silver (MNQN2)</a>
+								</div>
+								<div class="product-info_under">
+									<span class="code">код товара: 3125747</span>
+									<span class="delivery small small">Киев, Харьков, Днепр и др.</span>
+									<span data-toggle="tooltip" data-placement="top" title="Доступные способы доставки: самовывоз из Новой почты, доставка курьером, самовывоз " class="delivery">
+										<img src="img/np.png">
+										<img src="img/courier.png">
+										<img src="img/pickup.png">
+									</span>
+								</div>
+								<div class="product-info_short">
+									<span class="descr-item">гарантия 3 месяца</span>
+									<span class="descr-item">зарядное устройство</span>
+									<span class="descr-item">с документами</span>
+								</div>
+								<div class="product-info_text">
+									Все работает. Хорошее состояние, есть небольшие потертости
+								</div>
+							</div>
+						</div>
+						<div class="product-actions">
+							<div class="pay-info">
+								<div class="price">8 466 грн</div>
+								<div class="online-pay-item">
+									<i class="icon-payment"></i>
+									Можно оплатить онлайн
+								</div>
+							</div>
+							<div class="product-actions_btns">
+								<div class="top">
+									<a href="#" class="add-to-cart btn btn-fill added">В корзине</a>
+									<a href="" class="white-btn add-bookmark">
+										<i class="icon-heart-fill"></i>
+									</a>
+								</div>
+								<div class="fast-order">
+									<a href="" class="white-btn">Заказать в 1 клик</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-item_wrapp">
+					<div class="product-item">
+						<div class="left">
+							<div class="product-image">
+								<div class="image">
+									<div class="count">
+										<i class="icon-photo"></i>
+										5
+									</div>
+									<img src="https://price.boo.ua/img/Безымянный-1.png">
+								</div>
+							</div>
+							<div class="product-info">
+								<div class="product-info_title">
+									<span class="state-item orange">Среднее</span>
+									<a href="#">Apple iPhone 7 Plus 32GB Silver (MNQN2)</a>
+								</div>
+								<div class="product-info_under">
+									<span class="code">код товара: 3125747</span>
+									<!-- <span class="delivery small">Киев, Харьков, Днепр и др.</span> -->
+									<span data-toggle="tooltip" data-placement="top" title="Доступные способы доставки: самовывоз из Новой почты, доставка курьером, самовывоз " class="delivery">
+										<img src="img/np.png">
+										<img src="img/courier.png">
+										<img src="img/pickup.png">
+									</span>
+								</div>
+								<div class="product-info_short">
+									<span class="descr-item">гарантия 3 месяца</span>
+									<span class="descr-item">зарядное устройство</span>
+									<span class="descr-item">с документами</span>
+								</div>
+								<div class="product-info_text">
+									Все работает. Хорошее состояние, есть небольшие потертости
+								</div>
+							</div>
+						</div>
+						<div class="product-actions">
+							<div class="pay-info">
+								<div class="price">8 466 грн</div>
+								<div class="online-pay-item">
+									<i class="icon-payment"></i>
+									Можно оплатить онлайн
+								</div>
+							</div>
+							<div class="product-actions_btns">
+								<div class="top">
+									<a href="#" class="add-to-cart btn btn-fill added">В корзине</a>
+									<a href="" class="white-btn add-bookmark">
+										<i class="icon-heart-fill"></i>
+									</a>
+								</div>
+								<div class="fast-order">
+									<a href="" class="white-btn">Заказать в 1 клик</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-item_wrapp">
+					<div class="product-item">
+						<div class="left">
+							<div class="product-image">
+								<div class="image">
+									<div class="count">
+										<i class="icon-photo"></i>
+										5
+									</div>
+									<img src="https://price.boo.ua/img/Безымянный-1.png">
+								</div>
+							</div>
+							<div class="product-info">
+								<div class="product-info_title">
+									<span class="state-item orange">Среднее</span>
+									<a href="#">Apple iPhone 7 Plus 32GB Silver (MNQN2)</a>
+								</div>
+								<div class="product-info_under">
+									<span class="code">код товара: 3125747</span>
+									<!-- <span class="delivery small">Киев, Харьков, Днепр и др.</span> -->
+									<span data-toggle="tooltip" data-placement="top" title="Доступные способы доставки: самовывоз из Новой почты, доставка курьером, самовывоз " class="delivery">
+										<img src="img/np.png">
+										<img src="img/courier.png">
+										<img src="img/pickup.png">
+									</span>
+								</div>
+								<div class="product-info_short">
+									<span class="descr-item">гарантия 3 месяца</span>
+									<span class="descr-item">зарядное устройство</span>
+									<span class="descr-item">с документами</span>
+								</div>
+								<div class="product-info_text">
+									Все работает. Хорошее состояние, есть небольшие потертости
+								</div>
+							</div>
+						</div>
+						<div class="product-actions">
+							<div class="pay-info">
+								<div class="price">8 466 грн</div>
+								<div class="online-pay-item">
+									<i class="icon-payment"></i>
+									Можно оплатить онлайн
+								</div>
+							</div>
+							<div class="product-actions_btns">
+								<div class="top">
+									<a href="#" class="add-to-cart btn btn-fill added">В корзине</a>
+									<a href="" class="white-btn add-bookmark">
+										<i class="icon-heart-fill"></i>
+									</a>
+								</div>
+								<div class="fast-order">
+									<a href="" class="white-btn">Заказать в 1 клик</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="show-more_products">
+					<a href="">Показать ещё предложения</a>
+				</div>
+   			</div>
 
-    <section class="section-2">
-       <div class="wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                    <a class="logo-animate text-center" href=""><img src="img/logo.png" alt=""></a>
-                </div>
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                    <a href="" class="btn-custom">Записаться на приём</a>
-                </div>
-                <div class="col-lg-4">
-                    <div class="section-2_contacts text-center">
-                        <span class="pink">Телефоны</span>
-                        <div class="my-2">
-                            <span class="mr-3">
-                                <a href="tel:+38 (044) 230-82-82">+38 (044) 230-82-82</a>
-                            </span>
-                            <span> 
-                                <a href="tel:+38 (044) 230-82-82">+38 (044) 230-82-82</a>
-                            </span>
-                        </div>
-                        <div>
-                            <span class="mr-3"> 
-                                <a href="tel:+38 (044) 230-82-82">+38 (044) 230-82-82</a>
-                            </span>
-                            <span> 
-                                <a href="tel:+38 (044) 230-82-82">+38 (044) 230-82-82</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+   			<div class="product">
+ 
+   				<div class="row">
+   					<div class="col-md-6">
+   						<div class="border-right">
+   							<div class="specifications">
+	   						<h2 class="product_title bold">Характеристики</h2>
+	   						<ul class="specifications-list">
+	   							<li class="item">
+	   								<div class="item-label">
+	   									<span>Емкость аккумулятора</span>
+	   								</div>
+	   								<div class="item-value">2 900 MAh</div>
+	   							</li>
+	   							<li class="item">
+	   								<div class="item-label">
+	   									<span>Диагональ экрана</span>
+	   								</div>
+	   								<div class="item-value">5.5"</div>
+	   							</li>
+	   							<li class="item">
+	   								<div class="item-label">
+	   									<span>Разрешение экрана</span>
+	   								</div>
+	   								<div class="item-value">1080х1920</div>
+	   							</li>	
+	   							<li class="item">
+	   								<div class="item-label">
+	   									<span>Диагональ экрана</span>
+	   								</div>
+	   								<div class="item-value">Apple A10</div>
+	   							</li>	
+	   							<li class="item">
+	   								<div class="item-label">
+	   									<span>Диагональ экрана</span>
+	   								</div>
+	   								<div class="item-value">Длинный текст</div>
+	   							</li>	
+	   							<li class="item">
+	   								<div class="item-label">
+	   									<span>Диагональ экрана</span>
+	   								</div>
+	   								<div class="item-value">Длинный текст</div>
+	   							</li>	
+	   						</ul>
+   						</div>
+   						<div class="about-product">
+   							<h2 class="product_title bold">О товаре</h2>
+   							<div class="videowrapp">
+   								<iframe src="https://www.youtube.com/embed/2nBbwgdJwF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   							</div>
+   							<div class="about-product_text">
+   								Исключительное качество материалов
+								Особо прочная передняя панель из стекла. Плотно подогнанная рамка из алюминия, применяющегося в аэрокосмической отрасли. Защита от воды и пыли. И шесть великолепных цветов
+   							</div>
+   							<div class="find-product">
+   								<p class="find-product_title">Устали выбирать?</p>
+   								<span>Только скажите что ищете, и мы подберём для вас самые интересные и выгодные предложения!</span>
+   								<a href="#" class="sell-btn" data-toggle="modal" data-target="#findProduct">Найдите за меня!</a>
+   							</div>
+   						</div>
+   						</div>
+   					</div>	
+   					<div class="col-md-6">
+   						<div class="reviews">
+   							<h2 class="bold product_title">Отзывы покупателей
+   							<span class="count-reviews">3</span>
+   							</h2>
+   							<div class="product-stars">
+   								Общая оценка товара: 
 
-            </div>
-        </div>
-        </div>
-    </section>
+   								<span class="product-evaluation">
+   									<span class="bold">4</span>/5
+   								</span>
+   								<span class="rating">
+   									<i class="icon-star fill"></i>
+   									<i class="icon-star fill"></i>
+   									<i class="icon-star fill"></i>
+   									<i class="icon-star fill"></i>
+   									<i class="icon-star"></i>
+   								</span>
+   							</div>
+   							<div class="your-review">
+   								<form action="">
+   									<h5>А что вы думаете об этом товаре?</h5>
+   									<div class="rating-wrapp">
+	   									<div id="rateBlock" class="rating">
+	   										<input name="stars" id="e5" type="radio">
+	   										<label data-text="Отлично" for="e5"><i class="icon-star"></i></label>
+	   										<input name="stars" id="e4" type="radio">
+	   										<label data-text="Нормально" for="e4"><i class="icon-star"></i></label>
+	   										<input name="stars" id="e3" type="radio">
+	   										<label data-text="Среднее" for="e3"><i class="icon-star"></i></label>
+	   										<input name="stars" id="e2" type="radio">
+	   										<label data-text="Лучше" for="e2"><i class="icon-star"></i></label>
+	   										<input name="stars" id="e1" type="radio">
+	   										<label data-text="Плохо" for="e1"><i class="icon-star"></i></label>
+	   									</div>	
+	   									<span class="hoverText"></span>
+	   								</div>
+   									<div>
+   										<textarea rows="3"class="form-control" name="comment" placeholder="Поделитесь своим мнением"></textarea>
+   									</div>
+   									<div class="form_inline">	
+   										<div class="form-control_wrapp">
+   											<input placeholder="Как вас зовут?*" class="form-control" type="" name="">
+   										</div>
+   										<div class="form-control_wrapp">
+   											<input placeholder="Ваш email*" class="form-control" type="" name="">
+   											<div class="text-hint">
+   												не будет опубликован
+   											</div>
+   										</div>
+   									</div>
+   									<div>
+   										<button type="submit" class="sell-btn mt-1">
+   											Оставить отзыв
+   										</button>
+   									</div>
+   								</form>
+   							</div>
+   							<div class="text-hint">
+   								* — Звёздочкой помечены поля обязательные к заполнению
+   							</div>
+   							<div class="reviews-blocks">
+   								<!-- ЕСЛИ НЕТУ ОТЗЫВОВ -->
+	   							<div class="empty-comments">
+	   								<hr>
+	   								<img src="img/comments-icon.svg">
+	   								<p>
+	   									Здесь пока никто не оставил отзыв. <br>
+										Вы можете быть первым!
+	   								</p>
+	   							</div>
+								<!-- ЕСЛИ НЕТУ ОТЗЫВОВ КОНЕЦ -->
 
-    <section class="slider">
-        <!-- Slider main container -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide" data-swiper-parallax="-400">
-                    <div class="wrapper">
-                   <div class="container-fluid">
-                       <div class="row">
-                           <div class="col-12">
-                                <div class="slider-text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
-                                    <p class="pink">Красота зимой!</p>
-                                     <span class="">Только в декабре 50-100% на услуги красоты!</span>
-                                </div>
-                           </div>
-                       </div>
-                   </div>
-                    </div>
-                </div>
-                 <div class="swiper-slide" data-swiper-parallax="-400">
-                     <div class="wrapper">
-                    <div class="container-fluid">
-                       <div class="row">
-                           <div class="col-12">
-                                <div class="slider-text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
-                                    <p class="pink">Красота зимой!</p>
-                                     <span class="">Только в декабре 50-100% на услуги красоты!</span>
-                                </div>
-                           </div>
-                       </div>
-                    </div>
-                     </div>
-                </div>
-                <div class="swiper-slide" data-swiper-parallax="-200">
-                     <div class="wrapper">
-                    <div class="container-fluid">
-                       <div class="row">
-                           <div class="col-12">
-                                <div class="slider-text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
-                                    <p class="pink">Красота зимой!</p>
-                                    <span class="">Только в декабре 50-100% на услуги красоты!</span>
-                                </div>
-                           </div>
-                       </div>
-                  
-                    </div>
-                    </div>
-                </div>
-                <div class="swiper-slide" data-swiper-parallax="-300">
-                 <div class="wrapper">
-                    <div class="container-fluid">
-                       <div class="row">
-                           <div class="col-12">
-                                <div class="slider-text" data-swiper-parallax="-300" data-swiper-parallax-duration="1000">
-                                    <p class="pink">Красота зимой!</p>
-                                     <span class="">Только в декабре 50-100% на услуги красоты!</span>
-                                </div>
-                           </div>
-                       </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev d-sm-block d-none"></div>
-            <div class="swiper-button-next d-sm-block d-none"></div>
-
-            </div>
-       
-    </section>
-    <section class="statistics">
-        <div class="wrapper">
-            
-                <div class="d-flex stat-blocks justify-content-center align-items-end">
-                    <div class="stat-block text-center">
-                        <span class="pink stat-block_number">49</span>
-                        <p>врачей</p>
-                    </div>
-                    <div class="stat-block text-center">
-                        <span class="pink stat-block_number">104926</span>
-                        <p>довольных <br>пациента</p>
-                    </div>
-                    <div class="stat-block text-center">
-                         <span class="pink stat-block_number">862</span>
-                        <p>услуги для вас</p>
-                    </div>
-                </div>
-        
-        </div>
-    </section>
-    <section class="departments">
-            <div class="wrapper global-box-shadow d-flex flex-wrap"> 
-                <div class="departments-tabs">
-                    <div class="departments-tabs_img"></div>
-                    <div class="departments-tabs_content">
-                        <a href="">Косметология</a>
-                        <a href="">Стоматология</a>
-                        <a href="">Проктология</a>
-                        <a href="">Маммология</a>
-                        <a href="">Дерматология</a>                          
-                    </div>
-                </div>
-
-
-                <div class="departments-services">
-                    <a href="">Лечение волос</a>
-                    <a href="">Уход за телом</a>
-                    <a href="">Очищение организма</a>
-                    <a href="">Уход за лицом</a>
-                    <a href=""><u>Больше услуг...</u></a>
-                </div>
-            </div>
-            <div class="wrapper global-box-shadow departments-bottom">
-                <div class="text-center button-wrapper">
-                    <a href="" class="btn-custom">Показать все отделения</a>
-                </div>
-                <div class="all-departments">
-                    <div class="container-fluid">
-                        <div class="row justify-content-between">
-                            <div class="col-md-9 col-sm-12">
-                                <h2 class="all-departments_block__title">Взрослые</h2>
-                                <div class="d-flex flex-column all-departments_block">
-                                    
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a class="js-show-all-departments d-md-none" href="javascript: void(0);"><u>Показать все...</u></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-12">
-                                <h2 class="all-departments_block__title">Дети</h2>
-                                <div class="d-flex flex-column all-departments_block">
-                                    
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Эстетическая медицина</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a href="">Стоматология</a>
-                                    <a href="">Проктология</a>
-                                    <a href="">Гинекология</a>
-                                    <a class="js-show-all-departments d-md-none" href="javascript: void(0);"><u>Показать все...</u></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center benefits-title">
-                    <h3 class="custom-title pink">Наши преимущества:</h3>
-                </div>
-                <div class="benefits-wrapper">
-                    <div class="container-fluid d-none d-md-block">
-                        <div class="row">
-
-                            <div class="col-md-4">
-                                <div class="benefits-block benefits-block-1 text-center">
-                                    <img src="img/nurse.png" alt="">
-                                    <p class="pink">Опытные <br> врачи</p>
-                                    <span>
-                                        Всегда лучше доверить свое здоровье врачу, 
-                                        который имеет практический опыт. 
-                                        У нас работают опытные специалисты с многолетним 
-                                        практическим стажем работы, которые на основе 
-                                        современных знаний и методов диагностики 
-                                        Вам установят диагноз и помогут в его лечении
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="benefits-block benefits-block-2 text-center">
-                                    <img src="img/registration.png" alt="">
-                                    <p class="pink">Современная <br> аппаратура</p>
-                                    <span>
-                                        Всегда лучше доверить свое здоровье врачу, 
-                                        который имеет практический опыт. 
-                                        У нас работают опытные специалисты с многолетним 
-                                        практическим стажем работы, которые на основе 
-                                        современных знаний и методов диагностики 
-                                        Вам установят диагноз и помогут в его лечении
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="benefits-block benefits-block-3 text-center">
-                                    <img src="img/doctor.png" alt="">
-                                    <p class="pink">Заботливый <br> персонал</p>
-                                    <span>
-                                        Всегда лучше доверить свое здоровье врачу, 
-                                        который имеет практический опыт. 
-                                        У нас работают опытные специалисты с многолетним 
-                                        практическим стажем работы, которые на основе 
-                                        современных знаний и методов диагностики 
-                                        Вам установят диагноз и помогут в его лечении
-                                    </span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="d-md-none d-md-none js-benefitsSlider">
-                     
-
-                            <div class="swiper-wrapper">
-                                <div class="benefits-block benefits-block-1 text-center swiper-slide">
-                                    <img src="img/nurse.png" alt="">
-                                    <p class="pink">Опытные <br> врачи</p>
-                                    <span>
-                                        Всегда лучше доверить свое здоровье врачу, 
-                                        который имеет практический опыт. 
-                                        У нас работают опытные специалисты с многолетним 
-                                        практическим стажем работы, которые на основе 
-                                        современных знаний и методов диагностики 
-                                        Вам установят диагноз и помогут в его лечении
-                                    </span>
-                                </div>
-                        
-
-                      
-                                <div class="benefits-block benefits-block-2 text-center swiper-slide">
-                                    <img src="img/registration.png" alt="">
-                                    <p class="pink">Современная <br> аппаратура</p>
-                                    <span>
-                                        Всегда лучше доверить свое здоровье врачу, 
-                                        который имеет практический опыт. 
-                                        У нас работают опытные специалисты с многолетним 
-                                        практическим стажем работы, которые на основе 
-                                        современных знаний и методов диагностики 
-                                        Вам установят диагноз и помогут в его лечении
-                                    </span>
-                                </div>
-                   
-
-                   
-                                <div class="benefits-block benefits-block-3 text-center swiper-slide">
-                                    <img src="img/doctor.png" alt="">
-                                    <p class="pink">Заботливый <br> персонал</p>
-                                    <span>
-                                        Всегда лучше доверить свое здоровье врачу, 
-                                        который имеет практический опыт. 
-                                        У нас работают опытные специалисты с многолетним 
-                                        практическим стажем работы, которые на основе 
-                                        современных знаний и методов диагностики 
-                                        Вам установят диагноз и помогут в его лечении
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="swiper-scrollbar"></div>
-               
-
-                     
-                    </div>
+								<!-- ОТЗЫВЫ	   	 -->
+	   							<div class="review-block">
+	   								<div class="product-stars">
+	   									4
+	   									<span class="rating">
+		   									<i class="icon-star fill"></i>
+		   									<i class="icon-star fill"></i>
+		   									<i class="icon-star fill"></i>
+		   									<i class="icon-star fill"></i>
+		   									<i class="icon-star"></i>
+		   								</span>
+	   								</div>
+	   								<div class="review-block_text">
+	   									Классный iPhone, любовь с первого касания) Долго думала прежде чем купить, и не пожалела)
+	   								</div>
+	   								<div class="review-block_bottom">
+	   									<div>
+	   										Вам полезен этот отзыв?
+	   										<a class="like" title="Полезный отзыв" href="">
+	   											<i class="icon-like"></i>
+	   											2
+	   										</a>
+	   										<a class="dislike" title="Не полезный отзыв" href="">
+	   											<i class="icon-like"></i>
+	   											0
+	   										</a>
+	   									</div>
+	   									<div class="review-block_reviewer">
+	   										Виктория
+	   										<span class="date">
+	   											6.05.19
+	   										</span>
+	   									</div>
+	   								</div>
+	   							</div>
+	   							<div class="review-block">
+	   								<div class="product-stars">
+	   									3
+	   									<span class="rating">
+		   									<i class="icon-star fill"></i>
+		   									<i class="icon-star fill"></i>
+		   									<i class="icon-star fill"></i>
+		   									<i class="icon-star"></i>
+		   									<i class="icon-star"></i>
+		   								</span>
+	   								</div>
+	   								<div class="review-block_text">
+	   									Заказал 23 числа. Оператор озвучил что отгрузка будет 25. До сих пор нет информации по заказу. Товар оплатил сразу Картой. После звонка оператору 26числа, дали номер ТТН УкрПочты, а на сайте УкрПочты этот номер не существует. Сегодня 27 число, пытаюсь дозвониться в магазин, не могу. Первое впечатление уже почти 0
+	   								</div>
+	   								<div class="review-block_bottom">
+	   									<div>
+	   										Вам полезен этот отзыв?
+	   										<a class="like" href="">
+	   											<i class="icon-like"></i>
+	   											2
+	   										</a>
+	   										<a class="dislike" href="">
+	   											<i class="icon-like"></i>
+	   											0
+	   										</a>
+	   									</div>
+	   									<div class="review-block_reviewer">
+	   										Виктория
+	   										<span class="date">
+	   											6.05.19
+	   										</span>
+	   									</div>
+	   								</div>
+	   							</div>
+	   							<div class="show-more-reviews">
+	   								<a href="#">Показать ещё отзывы</a>
+	   							</div>
+	   							<!-- ОТЗЫВЫ КОНЕЦ 	 -->
 
 
-                </div>
-                <div class="about-us about-us-bg-pos">
-                    <div class="container-fluid">
-                        <div class="row justify-content-end">
-                            <div class="col-xl-8">
-                                <div class="text-center about-us-animate">
-                                    <h3 class="custom-title pink">О нас</h3>
-                                    <span class="about-us_text">
-                                        <span class="pink">«Васеда»</span> - самая крупная сеть медицинских центров в Украине, 
-                                        оказывающая медицинские услуги пациентам уже более <span class="pink">12</span> лет. 
-                                        Мы предлагаем своим пациентам помощь квалифицированных 
-                                        врачей более чем <span class="pink">30</span> специальностей. 
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-    </section>
-    <section class="contacts">
-       <div class="wrapper">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="contacts-block contacts-block-1">
-                           <img src="img/phone-call.png" alt="">
-                            <div class="contacts-block_title">Контакты</div>
-                            <div class="contacts-1 medium-font">
-                                ул. Глубочицкая, 40Х <br>
-                                Время работы: с 8.00 до 21.00 (без выходных и праздников) <br>
-                                тел: (044) 204-40-40 <br>
-                                (097)204-84-84 - Viber, WhatsApp, Telegram</div>
-                            <div class="contacts-2 medium-font">
-                                ул. Березняковская 30Б <br>
-                                тел: (044) 204-40-40 <br>
-                                (097)204-84-84 - Viber, WhatsApp, Telegram
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="contacts-block contacts-block-2">
-                           <img src="img/document.png" alt="">
-                            <div class="contacts-block_title">Информация</div>
-                            <div class="contacts-3 medium-font">
-                                Уз чистка <br>
-                                Снятие зубных отложений <br>
-                                Аппарат сургитрон <br>
-                                Лечение ударно волновой терапией</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="wrapper">
-            <div class="container-fluid">
-                <div class="row justify-content-between justify-content-xl-center align-items-center">
-                    <div class="col-md-3 logo">
-                        <img src="img/logo-footer.png" alt="">
-                    </div>
-                    <div class="col-md-5">
-                        <div class="footer-info">
-                            <span class="mb-4">Клиника “Васеда” - <i class="medium-font">это более 700 профильных специалистов, которые ежедневно 
-                                придерживаются самых высоких стандартов качества лечения и обслуживания.</i></span><br>
-                            <div class="mb-md-0 mb-4">
-                                <a class="mr-3" href="">Партнёрам</a>
-                                <a class="mr-3" href="">Отзывы</a>
-                                <a href="">Вакансии</a>    
-                            </div>
-                            
-                            <span>Лиц.МОЗ Украины №196689 от 24.01.2013</span> <br>
-                            <span><a class="mr-3" href="">Политика конфиденциальности</a></span>
-                            <span><a href="">Поблагодарить/Пожаловаться</a></span> <br>
-                            <span><a href="">Карта сайта</a></span>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="social-list text-center">
-                            <span class="socials-title">Социальные сети</span> 
-                            <div class="text-center">
-                                <a class="social-icon mr-3" href="">
-                                    <img src="img/instagram.png" alt="">   
-                                </a>
-                                <a class="social-icon" href="">
-                                    <img src="img/facebook-letter-logo.png" alt="">   
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
+   							</div>
+   						</div>
+   					</div>	
+   				</div>
+   			</div>
+   	</div>
 
-    <!--     bootstrap.min.js -- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/jquery.spincrement.min.js"></script>
-    <script src="js/jquery.viewportchecker.min.js"></script>
-    <!-- main JS -->
-    <script src="js/main.js?v=2"></script>
+   	<div class="modal fade map-modal" id="priceDynamics" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	  	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+	  		<img src="img/close.png">
+	  	</button>
+	    <div class="modal-content">
+	    	<div class="top">
+	    		<h3>Динамика цен Apple iPhone 7 Plus 32GB Silver (MNQN2)</h3>
+	    		<p>с ноября 2018 по март 2019</p>
+	    	</div>
+	    	<p class="text-muted mt-1">
+	    		Статистика составляется каждый месяц на основе средней месячной стоимости всех товарных предложений на сайте.
+	    	</p>
+	    	<div class="graph" style="height: 500px;"></div>
+	   		<div class="newsletter-block">
+	   			<div class="text">
+	   				<span class="check">
+						<input class="styled-checkbox" type="checkbox" id="subscribe" name="apple" value="Apple">
+	  					<label for="subscribe"></label>	
+					</span>
+	   				<p class="title">Хотите узнать о снижении цены быстрее остальных?</p>
+	   				<span>Подпишитесь на этот товар, и как только на сайте появится предложение с ценой ниже чем сейчас — вы тут же получите об этом уведомление!</span>
+	   			</div>
+	   			<div class="form">
+	   				<input placeholder="Ваш email*" type="email" name="email">
+	   				<a href="" class="btn btn-fill">Подписаться</a>
+	   			</div>
+	   		</div>
+	    </div>
+	  </div>
+	</div>
+
+		<div class="modal fade find-product-modal" id="findProduct" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		  	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		  		<img src="img/close.png">
+		  	</button>
+		    <div class="modal-content">
+		    	<h2 class="bold">Заявка на подбор товара</h2>
+		    	<p class="mt-1">Укажите какой товар найти, и мы подберём для вас самые интересные и выгодные предложения со всего сайта!</p>
+		    	<p class="mt-1">А ещё наш бот <a href="#">BOOBot</a> в телеграме умеет делать всё то же самое :)</p>
+		    	<hr>
+		    	<h4>Что найти?</h4>
+		    	<form action="">
+		    		<div class="d-flex mt-1">
+		    			<div class="pick-product">
+							<span class="pick-product_item">
+								<input checked="" id="pick-product_item1" type="radio" name="memory">
+								<label for="pick-product_item1">							
+									<div class="icon">
+										<img src="img/ring.svg">
+									</div>
+									Золото
+								</label>
+							</span>
+							<span class="pick-product_item">
+								<input id="pick-product_item2" type="radio" name="memory">
+								<label for="pick-product_item2">
+									<div class="icon">
+										<img src="img/laptop.svg">
+									</div>
+									Технику
+								</label>
+							</span>
+							<span class="pick-product_item">
+								<input id="pick-product_item3" type="radio" name="memory">
+								<label for="pick-product_item3">
+									<div class="icon">
+										<img src="img/bicycle.svg">
+									</div>
+									Технику
+								</label>
+							</span>
+						</div>
+						<div>
+							<input class="form-control" type="" name="">
+							<input class="form-control" type="" name="">
+						</div>
+			    	</div>
+			    	<div class="mt-1">
+			    		<input class="form-control" type="text" placeholder="Добавьте комментарий, можно небольшой *" name="">
+			    	</div>
+			    	<div class="d-flex justify-content-between bottom">
+			    		<input class="form-control" type="text" name="" placeholder="Ваш телефон*">
+			    		<a href="#" class="sell-btn">Найдите за меня!</a>
+			    	</div>
+		    	</form>
+		    	<div class="hint">
+		    		* — Звёздочкой помечены поля обязательные к заполнению
+		    	</div>
+		    </div>
+		  </div>
+		</div>
+
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/perfect-scrollbar.jquery.js"></script>
+    <!-- custom select -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCokruMkleEdVI0maGqxH-Ft83ygQiHzBU"></script>
+
 
 </body>
 
