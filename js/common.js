@@ -22,9 +22,11 @@ $(document).ready(function(){
     $('#rateBlock label').on('mouseleave', function(){
         if($('#rateBlock input:checked').length === 0) {
             $('.hoverText').html('');    
+        } else {
+            $('.hoverText').html($('#rateBlock input:checked').next('label').data('text'));
+            $('#rateBlock input:checked').next('label').addClass('checked');
         }
-        $('.hoverText').html($('#rateBlock input:checked').next('label').data('text'));
-        $('#rateBlock input:checked').next('label').addClass('checked');
+        
     });
 
     var windowScrollTop;
@@ -70,100 +72,44 @@ $(document).ready(function(){
             }
         }]
     });
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
+    
+    $(window).on('load resize', function(){
+        
+        if(isMobileDevice()) {
+          
+             $('.images-grid').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+              //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+              console.log('init');
+              var i = (currentSlide ? currentSlide : 0) + 1;
+              $('.images-grid + .counter').text(i + '/' + slick.slideCount);
+            });
 
+            $('.images-grid').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<div class="slick-prev"><img src="img/slider-arrow-left_mobile.svg"></div>',
+                nextArrow: '<div class="slick-next"><img src="img/slider-arrow-right_mobile.svg"></div>'
+            });
+
+        }
+    });
+
+    $('.images-grid').on('init', function(){
+         $('.slick-arrow').on('mousedown touchstart',function(){
+            $(this).addClass('focus');
+        });
+         $('.slick-arrow').on('mousedown touchend',function(){
+            $(this).removeClass('focus');
+        });
+    });
+    console.log($('.slick-arrow'));
+   
+   
+    
     
 
 });
 
-
-// var img_ele = null;
-
-// function zoom(zoomincrement) {
-//   img_ele = document.getElementById('drag-img');
-//   var pre_width = img_ele.getBoundingClientRect().width,
-//         pre_height = img_ele.getBoundingClientRect().height;
-//   img_ele.style.width = (pre_width * zoomincrement) + 'px';
-//   img_ele.style.height = (pre_height * zoomincrement) + 'px';
-//   img_ele = null;
-// }
-
-// document.getElementById('zoomout').addEventListener('click', function() {
-//   zoom(0.5);
-// });
-// document.getElementById('zoomin').addEventListener('click', function() {
-//   zoom(1.5);
-// });
-
-// function start_drag() {
-//   img_ele = this;
-//   x_img_ele = window.event.clientX - document.getElementById('drag-img').offsetLeft;
-//   y_img_ele = window.event.clientY - document.getElementById('drag-img').offsetTop;
-//     console.log("start drag");
-// }
-
-// function stop_drag() {
-//   img_ele = null;
-//   console.log("stop drag");
-// }
-
-// function while_drag() {
-//   var x_cursor = window.event.clientX;
-//   var y_cursor = window.event.clientY;
-//   if (img_ele !== null) {
-//     img_ele.style.left = (x_cursor - x_img_ele) + 'px';
-//     img_ele.style.top = ( window.event.clientY - y_img_ele) + 'px';
-//       console.log('dragging > img_left:' + img_ele.style.left+' | img_top: '+img_ele.style.top);
-//   }
-// }
-
-// document.getElementById('drag-img').addEventListener('mousedown', start_drag);
-// document.getElementById('container').addEventListener('mousemove', while_drag);
-// document.getElementById('container').addEventListener('mouseup', stop_drag);
-
-var img_ele = null;
-
-function zoom(zoomincrement) {
-  img_ele = $('.slick-current img')
-  var pre_width = img_ele.getBoundingClientRect().width,
-        pre_height = img_ele.getBoundingClientRect().height;
-  img_ele.style.width = (pre_width * zoomincrement) + 'px';
-  img_ele.style.height = (pre_height * zoomincrement) + 'px';
-  img_ele = null;
-}
-
-document.getElementById('zoomout').addEventListener('click', function() {
-  zoom(0.5);
-});
-document.getElementById('zoomin').addEventListener('click', function() {
-  zoom(1.5);
-});
-
-function start_drag() {
-  img_ele = this;
-  console.log(img_ele);
-  x_img_ele = window.event.clientX - document.getElementById('drag-img').offsetLeft;
-  y_img_ele = window.event.clientY - document.getElementById('drag-img').offsetTop;
-    console.log("start drag");
-}
-
-function stop_drag() {
-  img_ele = null;
-  console.log("stop drag");
-}
-
-function while_drag() {
-  var x_cursor = window.event.clientX;
-  var y_cursor = window.event.clientY;
-  if (img_ele !== null) {
-    img_ele.style.left = (x_cursor - x_img_ele) + 'px';
-    img_ele.style.top = ( window.event.clientY - y_img_ele) + 'px';
-      console.log('dragging > img_left:' + img_ele.style.left+' | img_top: '+img_ele.style.top);
-  }
-}
-
-document.getElementById('drag-img').addEventListener('mousedown', start_drag);
-// $('.featuredPostSlider img').on('mousedown', function(){
-//     start_drag();
-// });
-document.getElementById('container').addEventListener('mousemove', while_drag);
-document.getElementById('container').addEventListener('mouseup', stop_drag);
