@@ -58,6 +58,7 @@ $(document).ready(function(){
             breakpoint: 567,
             settings: {
                 arrows: true,
+                fade: false,
                 prevArrow: '<div class="slick-prev"><img src="img/slider-arrow-left_mobile.svg"></div>',
                 nextArrow: '<div class="slick-next"><img src="img/slider-arrow-right_mobile.svg"></div>'
             }

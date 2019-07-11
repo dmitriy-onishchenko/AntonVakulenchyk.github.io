@@ -1547,7 +1547,9 @@ textarea {
 #imagesGallery .slick-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 100;
 }
 
@@ -1776,12 +1778,18 @@ textarea {
 
   }
   .images-grid + .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
     top: -50px;
     margin-bottom: -40px;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 
   }
   .product.single .description {
@@ -1793,7 +1801,7 @@ textarea {
   #imagesGallery .modal-dialog {
     padding: 0;
     max-width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(39, 37, 37);
   }
 
   #slick-pager, #slick-pager * {
@@ -1831,4 +1839,3 @@ screen and (min-device-pixel-ratio: 1.5)
   }
   
 }
-
