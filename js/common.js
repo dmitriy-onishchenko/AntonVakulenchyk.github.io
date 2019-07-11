@@ -53,7 +53,15 @@ $(document).ready(function(){
         fade: true,
         autoplay: false,
         adaptiveHeight: false,
-        asNavFor: '.slick-pager'
+        asNavFor: '.slick-pager',
+        responsive: [{
+            breakpoint: 567,
+            settings: {
+                arrows: true,
+                prevArrow: '<div class="slick-prev"><img src="img/slider-arrow-left_mobile.svg"></div>',
+                nextArrow: '<div class="slick-next"><img src="img/slider-arrow-right_mobile.svg"></div>'
+            }
+        }]
     });
 
     $('.slick-pager').slick({
@@ -81,7 +89,7 @@ $(document).ready(function(){
         $('.images-grid').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
           //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
           var i = (currentSlide ? currentSlide : 0) + 1;
-          $('.images-grid + .counter').text(i + '/' + slick.slideCount);
+          $('.slide-counter').text(i + '/' + slick.slideCount);
         });
 
         if(!$('.images-grid').hasClass('slick-initialized')) {

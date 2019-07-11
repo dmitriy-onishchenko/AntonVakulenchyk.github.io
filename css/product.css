@@ -1481,17 +1481,16 @@ textarea {
   border-radius: 3px;
   overflow: hidden;
 }
-.images-grid + .counter:empty {
+
+.images-grid + .mobile {
   display: none;
 }
-.images-grid + .counter {
+.slide-counter {
   text-align: center;
   width: 40px;
   padding: 5px 0;
   border-radius: 3px;
   background-color: rgba(33, 37, 41, 0.3);
-  position: relative;
-  top: -40px;
   color: #fff;
   font-size: 10px;
 
@@ -1542,6 +1541,20 @@ textarea {
   padding: 10px 0;
 }
 
+#imagesGallery .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+#imagesGallery .slick-arrow.slick-prev {
+  left: 10px;
+}
+#imagesGallery .slick-arrow.slick-next {
+  right: 10px;
+}
+
 #imagesGallery .modal-body {
   padding: 0;
   -webkit-box-flex: 1;
@@ -1551,6 +1564,10 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   /*height: 100vh;*/
+}
+#imagesGallery .slick-list,
+#imagesGallery .slick-track {
+    height: 100%;
 }
 
 #imagesGallery .arrows {
@@ -1703,7 +1720,6 @@ textarea {
 @media (max-width: 767px) { /* line 124, ../scss/custom.scss */
   .slick-pager { margin: 0; }
   /* line 125, ../scss/custom.scss */
-  #slick-pager { background-color: #000; width: 100%; position: relative; }
   /* line 129, ../scss/custom.scss */
   #slick-pager a { border-top: none; border-right: 1px solid rgba(255, 255, 255, 0.6); }
   /* line 130, ../scss/custom.scss */
@@ -1739,7 +1755,7 @@ textarea {
     width: calc(55% - 15px);
   }
 }
-@media (max-width: 567px) {
+@media (max-width: 567px), (orientation: landscape) and (max-height: 500px) {
   h1 {
     font-size: 20px;
   }
@@ -1756,10 +1772,45 @@ textarea {
   .images-grid .image-wrapp {
 
   }
+  .images-grid + .mobile {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -50px;
+    margin-bottom: -40px;
+    align-items: flex-end;
+
+  }
   .product.single .description {
     width: 100%;
     margin-top: 10px;
   } 
+
+  /* modal with gallery */
+  #imagesGallery .modal-dialog {
+    padding: 0;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  #slick-pager, #slick-pager * {
+    display: none;
+  }
+  .featuredPostSlider {
+    width: 100%;
+  }
+  #imagesGallery .modal-dialog .close {
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+  }
+  #imagesGallery .modal-dialog .close img {
+    width: 17px;
+  }
+  #imagesGallery .slick-list,
+  #imagesGallery .slick-track {
+    height: calc(100% - 44px);
+  }
 }
 img.retina {
 display: none;
@@ -1778,7 +1829,3 @@ screen and (min-device-pixel-ratio: 1.5)
   
 }
 
-.slick-list,
-.slick-track {
-    height: 100%;
-}
