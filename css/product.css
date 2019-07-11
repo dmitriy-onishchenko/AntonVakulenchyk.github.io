@@ -45,6 +45,9 @@ h5 {
   font-size: 16px;
   line-height: 1.13;
 }
+body.modal-open .container {
+  overflow: hidden;
+}
 .bold {
   font-weight: bold;
 }
