@@ -76,26 +76,23 @@ $(document).ready(function(){
         return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     };
     
-    $(window).on('load resize', function(){
-        
-        if(isMobileDevice()) {
-          
-             $('.images-grid').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-              //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-              console.log('init');
-              var i = (currentSlide ? currentSlide : 0) + 1;
-              $('.images-grid + .counter').text(i + '/' + slick.slideCount);
-            });
+    if(isMobileDevice() || $(window).width() < 767) {
+      
+        $('.images-grid').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+          //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+          var i = (currentSlide ? currentSlide : 0) + 1;
+          $('.images-grid + .counter').text(i + '/' + slick.slideCount);
+        });
 
+        if(!$('.images-grid').hasClass('slick-initialized')) {
             $('.images-grid').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 prevArrow: '<div class="slick-prev"><img src="img/slider-arrow-left_mobile.svg"></div>',
                 nextArrow: '<div class="slick-next"><img src="img/slider-arrow-right_mobile.svg"></div>'
-            });
-
+            });    
         }
-    });
+    }
 
     $('.images-grid').on('init', function(){
          $('.slick-arrow').on('mousedown touchstart',function(){
@@ -105,7 +102,6 @@ $(document).ready(function(){
             $(this).removeClass('focus');
         });
     });
-    console.log($('.slick-arrow'));
    
    
     
