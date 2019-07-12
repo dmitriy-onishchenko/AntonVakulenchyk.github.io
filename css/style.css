@@ -1433,6 +1433,14 @@ textarea {
   .sell-block .sell-btn {
     margin-top: 10px;
   }
+
+  .specification > div  {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .specification > div  table {
+    width: 100%;
+  }
   h1 {
     font-size: 18px;
   }
