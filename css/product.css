@@ -771,8 +771,6 @@ a:hover {
 }
 
 .grid-view .product-item {
- /* width: 32.5%;
-  flex-basis: 32.5%;*/
   padding-right: 5px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1795,7 +1793,75 @@ textarea {
   .product.single .description {
     width: 100%;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
   } 
+
+  .product.single .description .warranties {
+    order: 3;
+  }
+  .product.single .description .product-tabs {
+    order: 4;
+  }
+
+  .product.single .description .delivery {
+    order: 5;
+  }
+
+  .product.single .description .payment {
+    order: 6;
+  }
+
+  .product-top .info .bookmark {
+    display: none;
+  }
+  /*плохой код*/
+  .description-top {
+    flex-direction: column;
+  }
+  .product.single .description .pay-info {
+    margin-right: 40px;
+    margin-bottom: 10px;
+    width: 48%;
+    position: relative;
+    top: 45px;
+    margin-top: -35px;
+  }
+  .pay-info .old-price {
+    display: none;
+  }
+
+  .product-actions_btns .top {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .product-actions_btns .add-to-cart {
+    margin-right: 0;
+    width: 48%;
+    transform: translateX(108%);
+  }
+
+  .product-actions_btns .credit {
+    width: 48%;
+    margin-top: 10px;
+  }
+  .fast-order {
+    margin-top: 10px;
+    float: right;
+    margin-bottom: -40px;
+    position: relative;
+    top: -50px;
+    width: 48%;
+  }
+  .fast-order {
+    margin-top: 10px;
+    margin-bottom: -40px;
+    position: relative;
+    top: -50px;
+    width: 48%;
+  }
+  /*плохой код КОНЕЦ*/
 
   /* modal with gallery */
   #imagesGallery .modal-dialog {

@@ -34,7 +34,7 @@ $(document).ready(function(){
     $(window).on('scroll resize', function(){
         windowScrollTop = $(window).scrollTop();
         descriptionTop = $('#description').offset().top;
-        if(windowScrollTop - 50 > descriptionTop) {
+        if(windowScrollTop - 50 > descriptionTop && $(window).width() > 992) {
             $('.fixed-head').addClass('fix');
         } else {
             $('.fixed-head').removeClass('fix');
@@ -84,9 +84,19 @@ $(document).ready(function(){
     function isMobileDevice() {
         return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     };
+
+
+    $('.images-grid').on('init', function(){
+         $('.slick-arrow').on('mousedown touchstart',function(){
+            $(this).addClass('focus');
+        });
+         $('.slick-arrow').on('mousedown touchend',function(){
+            $(this).removeClass('focus');
+        });
+    });
     
-    if(isMobileDevice() || $(window).width() < 767) {
-      
+    if(isMobileDevice() & $(window).width() < 767) {
+        console.log('qqq');
         $('.images-grid').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
           //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
           var i = (currentSlide ? currentSlide : 0) + 1;
@@ -103,14 +113,6 @@ $(document).ready(function(){
         }
     }
 
-    $('.images-grid').on('init', function(){
-         $('.slick-arrow').on('mousedown touchstart',function(){
-            $(this).addClass('focus');
-        });
-         $('.slick-arrow').on('mousedown touchend',function(){
-            $(this).removeClass('focus');
-        });
-    });
    
    
     
