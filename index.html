@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/css/perfect-scrollbar.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/style.css?v=5">
 
 </head>
 
@@ -643,7 +643,11 @@
    									<i class="icon-star"></i>
    								</span>
    							</div>
-   							<div class="your-review">
+   							<a id="showReviewForm" class="sell-btn mt-1">
+								Оставить отзыв
+							</a>
+							<div class="your-review_wrapp">	
+								<div class="your-review">
    								<form action="">
    									<h5>А что вы думаете об этом товаре?</h5>
    									<div class="rating-wrapp">
@@ -685,6 +689,8 @@
    							<div class="text-hint">
    								* — Звёздочкой помечены поля обязательные к заполнению
    							</div>
+							</div>
+   							
    							<div class="reviews-blocks">
    								<!-- ЕСЛИ НЕТУ ОТЗЫВОВ -->
 	   							<div class="empty-comments">
@@ -779,7 +785,7 @@
    			</div>
    	</div>
 
-   	<div class="modal fade map-modal" id="priceDynamics" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   	<div class="modal fade" id="priceDynamics" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
 	  	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 	  		<img src="img/close.png">
@@ -881,7 +887,7 @@
     <!-- custom select -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="js/common.js?v=3"></script>
+    <script src="js/common.js?v=4"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCokruMkleEdVI0maGqxH-Ft83ygQiHzBU"></script>
 
 

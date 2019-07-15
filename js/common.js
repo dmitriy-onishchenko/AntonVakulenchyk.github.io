@@ -35,11 +35,11 @@ $(document).ready(function(){
         $('#products').addClass('grid-view').removeClass('list-view');
     }
 
-    // $('#mobile-tabs').click(function (e) {
-    //     e.preventDefault();
-    //     console.log();
-    //     let target = $(e.target).attr('href');
-    //     $('#' + target).addClass('SHOW');
-    // })
+    $('#showReviewForm').click(function(e) {
+        e.preventDefault();
+        $(this).next().show();
+        $(this).hide();
+    })
+   
 });
 

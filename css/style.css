@@ -340,6 +340,7 @@ a:hover {
 }
 .sell-btn {
   display: inline-block;
+  padding: 0 5px;
   width: 100%;
   background-color: #C8DEF0;
   border: 1px solid #C8DEF0;
@@ -988,8 +989,9 @@ textarea {
   width: calc(50% - 5px);
 } 
 .form_inline .form-control {
-  height: 44px;
-  line-height: 44px;
+  /*height: 44px;
+  line-height: 44px;*/
+  padding: 21px 12px;
 }
 .text-hint {
   font-size: 10px;
@@ -1300,8 +1302,9 @@ textarea {
   display: none;
 }
 .find-product-modal input {
-  height: 44px;
-  line-height: 44px;
+ /* height: 44px;
+  line-height: 44px;*/
+  padding: 21px 12px;
   margin-bottom: 10px;
 }
 .pick-product_item label {
@@ -1340,6 +1343,11 @@ textarea {
 }
 .find-product-modal .bottom > * {
   width: 200px;
+  max-width: calc(50% - 10px);
+  min-width: calc(50% - 10px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .find-product-modal .modal-content {
   padding-bottom: 10px;
@@ -1411,7 +1419,7 @@ textarea {
   }
   .product .reviews {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 20px 10px;
     border-top: none;
   }
   .rating-wrapp {
@@ -1449,6 +1457,9 @@ textarea {
   }
   .product .nav-tabs.mobile-tabs>li.active>a {
     color: #000;
+  }
+  .your-review_wrapp {
+    display: none;
   }
 }
 @media (max-width: 576px) {
@@ -1534,5 +1545,22 @@ textarea {
   .your-review {
     margin: 20px -10px 0 -10px;
     border-radius: 0;
+  }
+  .find-product-modal .hint {
+    margin-top: 0;
+  }
+  .pick-product {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .modal .modal-dialog .close {
+    right: 0;
+    top: 0;
+  }
+
+  .modal .modal-dialog {
+    padding-top: 40px;
   }
 }
