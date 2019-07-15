@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/css/perfect-scrollbar.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/style.css?v=3">
 
 </head>
 
@@ -547,7 +547,19 @@
    			<div class="product">
  
    				<div class="row">
-   					<div class="col-md-6">
+   					<ul class="nav nav-tabs mobile-tabs">
+					    <li role="presentation" class="active">
+					    	<a href="#go-to-info" aria-controls="go-to-info" role="tab" data-toggle="tab">
+					    		Комплектация, нюансы
+					    	</a>
+					    </li>
+					    <li role="presentation">
+					    	<a href="#go-to-reviews" aria-controls="go-to-reviews" role="tab" data-toggle="tab">
+					    		Характеристики
+					    	</a>
+					    </li>
+					 </ul>
+   					<div id="go-to-info" class="col-md-6 active tab">
    						<div class="border-right">
    							<div class="specifications">
 	   						<h2 class="product_title bold">Характеристики</h2>
@@ -607,7 +619,7 @@
    						</div>
    						</div>
    					</div>	
-   					<div class="col-md-6">
+   					<div id="go-to-reviews" class="col-md-6 tab">
    						<div class="reviews">
    							<h2 class="bold product_title">Отзывы покупателей
    							<span class="count-reviews">3</span>
@@ -864,7 +876,7 @@
     <!-- custom select -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="js/common.js?v=2"></script>
+    <script src="js/common.js?v=3"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCokruMkleEdVI0maGqxH-Ft83ygQiHzBU"></script>
 
 

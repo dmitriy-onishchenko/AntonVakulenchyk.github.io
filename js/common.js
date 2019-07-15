@@ -26,12 +26,20 @@ $(document).ready(function(){
             $('.hoverText').html($('#rateBlock input:checked').next('label').data('text'));
             $('#rateBlock input:checked').next('label').addClass('checked');
         }
-        
     });
     function isMobileDevice() {
         return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     };    
     
+    if(isMobileDevice()) {
+        $('#products').addClass('grid-view').removeClass('list-view');
+    }
 
+    // $('#mobile-tabs').click(function (e) {
+    //     e.preventDefault();
+    //     console.log();
+    //     let target = $(e.target).attr('href');
+    //     $('#' + target).addClass('SHOW');
+    // })
 });
 
