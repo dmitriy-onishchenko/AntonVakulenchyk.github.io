@@ -16,7 +16,7 @@ body {
   font-style: normal;
   position: relative;
   min-height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   font-size: 14px;
   color: #000;
 }
@@ -827,8 +827,7 @@ a:hover {
   margin-bottom: 40px;
 }
 .specifications-list {
-  padding: 0;
-  margin: 15px 0;
+  padding: 15px 0;
 }
 .product_title {
   margin-bottom: 5px;
@@ -875,7 +874,7 @@ a:hover {
 }
 
 .about-product_text {
-  margin: 20px 0 25px 0;
+  padding: 20px 0 25px 0;
 }
 
 .find-product {
@@ -1388,6 +1387,10 @@ textarea {
     width: 49%;
     flex-basis: 49%;
   }
+  .product {
+    border: none;
+    padding: 0;
+  }
   .product .tab {
     display: none;
   }
@@ -1396,7 +1399,20 @@ textarea {
   }
   .product .border-right {
     padding: 0 10px;
+    padding-bottom: 10px;
     border-right: none;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+  .product .border-right.bottom {
+    border: none;
+    margin-top: 15px;
+  }
+  .product .reviews {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-top: none;
   }
   .rating-wrapp {
     text-align: center;
@@ -1420,18 +1436,37 @@ textarea {
     display: none;
   }
   .product .mobile-tabs {
-    margin-bottom: 20px;
     display: block;
+  }
+  .product .mobile-tabs li {
+    width: 50%;
+    text-align: center;
+  }
+  .product .nav-tabs.mobile-tabs>li>a {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+  .product .nav-tabs.mobile-tabs>li.active>a {
+    color: #000;
   }
 }
 @media (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .row {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .grid-view .product-item_wrapp {
     width: 100%;
     flex-basis: 100%;
-  }
-  .product {
-    border: none;
-    padding: 0;
   }
 
   .description {
@@ -1497,7 +1532,7 @@ textarea {
   }
 
   .your-review {
-    margin: 20px -15px 0 -15px;
+    margin: 20px -10px 0 -10px;
     border-radius: 0;
   }
 }
